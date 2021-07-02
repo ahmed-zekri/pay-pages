@@ -1,0 +1,222 @@
+<head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+
+  <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <title>Identity verification</title>
+
+</head>
+<style>
+    /* Ahmed style*/
+    .margin-top-moderate {
+    margin-top: 6%
+}
+.margin-top-sm {
+    margin-top: 3%
+}
+
+.margin-left-sm {
+    margin-left: 4%
+}
+.light-font-blue {
+    font-family: Roboto, sans-serif;
+    color: #152C5B;
+    font-size: 1.1em
+}
+
+.bold-font-blue {
+    font-family: Roboto, sans-serif;
+    color: #152C5B;
+    font-size: 1.2em;
+    font-weight: bold
+}
+/* Ahmed style*/
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    
+
+    
+    <div class="col-6">
+        
+
+         <div class="row" style="margin-top: 3%;margin-left:0px;">
+            <div class="col-md-4 col-md-4-style"
+                 style="border-radius: 2px;background-color: #D0DCF5;height: 70px;margin-left:0px;">
+                 <div class="row">
+                  <div class="col-md-2 margin-top-moderate" ><img src="img\Profile.svg" width="30" height="30"/></div>
+                  <div class="col-md margin-top-sm  margin-left-sm ">
+                      <div class="row light-font-blue" > Customer
+                      </div>
+                      <div class="row bold-font-blue">+21652365145</div>
+  
+                  </div>
+              </div>
+            </div>
+    
+    
+            <div class="col-md-4"
+                 style="border-radius: 2px;background-color: #D0DCF5;height: 70px;margin-left: 0.5%;">
+                 <div class="row">
+                  <div class="col-md-2 margin-top-moderate"><img src="img\time.svg" width="30" height="30"/></div>
+                  <div class="col-md margin-top-moderate margin-left-sm">
+  
+                      <div class="row bold-font-blue" >+21652365145</div>
+  
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col">
+          <div class="title-form ">Identity verification</div>
+        </div>
+      <div class="row mb-2">
+        <div class="col">
+          <div class="form-outline">
+            <input  type="text" id="" class="form-control height-input style-name-input" placeholder="Latin name"/>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="has-feedback ">
+            <span class="form-control-feedback">
+                <i  class="fa fa-calendar style-calendar-icon"></i>
+              </span>
+            <input  placeholder="birth date"  class="form-control widget date-pick width-input-date" type="text" name="daterange"/>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <div class="dropdown ">
+            <button class="widget  btn dropdown_light dropdown-toggle dropdown-border-color" type="button" id="dropdownMenuButtonGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <div> <span class="">Nationality</span></div>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">French</a>
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Tunisian</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="" class="form-control height-input" placeholder="Address"/>
+
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <div class="dropdown ">
+            <button class="widget  btn dropdown_light dropdown-toggle dropdown-border-color" type="button" id="dropdownMenuButtonGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="" >Document type</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="" class="form-control height-input" placeholder="Document number"/>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+
+          <div class="dropdown ">
+            <button class="widget  btn dropdown_light dropdown-toggle dropdown-border-color" type="button" id="dropdownMenuButtonGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="">Document country</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <div class="has-feedback ">
+            <input  class="form-control widget date-pick width-input-date" type="text" name="daterange"/>
+            <span class="form-control-feedback">
+              <i class="fa fa-calendar style-calendar-icon2"></i>
+            </span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="has-feedback ">
+            <input  class="form-control widget date-pick width-input-date" type="text" name="daterange"/>
+            <span class="form-control-feedback">
+              <i  class="fa fa-calendar style-calendar-icon2"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-2 " >
+        <div class="col-sm-4">
+          
+       <img class="margin-arrow-img" src="img/back-arrow.svg" /> 
+       </div>
+       <div class="col-sm-8">
+       <button type="button" class="btn btn-primary reject-button  float-right">Reject</button>
+       
+       <button  type="button" class="btn btn-primary next-button margin-button float-right ">Next</button>
+     </div>
+     </div>
+      
+    </div>
+
+    <div class="col-4 parent"> 
+        
+        <img class="image1 style-img"  src="img/pexels-photo-614810.jpeg" width="300" height="300"/>
+        <img  class="image2 style-img" src="img/arrow1.svg" />
+        <img  class="image3 style-img" src="img/arrow2.svg" />
+        <div class=" col-4 parent style-div-steps">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            
+          </div> 
+    </div>
+   
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    $('input[name="daterange"]').daterangepicker({
+   
+      opens: 'left'
+    },
+     function (start, end, label) {
+      // console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    }
+    );
+  });
+
+</script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
