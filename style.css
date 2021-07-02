@@ -103,6 +103,9 @@
 .margin-top {
     margin-top: 15px
 }
+.margin-top-checkbox {
+    margin-top: 8px
+}
 
 .margin-bottom {
     margin-bottom: 20px
@@ -168,7 +171,7 @@
 }
 
 .doc-cell {
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #D0DCF5;
     height: 70px;
 
@@ -190,10 +193,14 @@
     margin-left: 7px;
 }
 
+.top-text-margin-doc {
+    margin-top: 5px
+}
+
 .light-font-blue {
     font-family: Roboto, sans-serif;
     color: #152C5B;
-    font-size: 1.1em
+    font-size: 0.9em
 }
 
 .bold-font-blue {
@@ -212,14 +219,14 @@
 }
 
 .small-cell-doc {
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #D0DCF5;
     height: 97px;
     background-size: cover;
 }
 
 .big-cell-doc {
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #D0DCF5;
     height: 300px;
     margin-left: 0.5%;
@@ -227,7 +234,7 @@
 }
 
 .ribbon-icons {
-    transform: translate(-445%, 25%)
+    transform: translate(-445%, 21%)
 }
 
 .ribbon-icon {
@@ -504,9 +511,11 @@
 }
 
 .margin-top-widget {
-margin-top: 8%}
+    margin-top: 8%
+}
 
 .margin-left-widget {
+<<<<<<< HEAD
 margin-left: 8%}
 
 .dropdown-toggle-float-right::after {
@@ -584,3 +593,35 @@ margin-left: 8%}
          font-family: Roboto, sans-serif;
 
     }
+=======
+    margin-left: 8%
+}
+
+.stepper {
+    transform: translateX(100px);
+}
+
+.stepper-margin {
+    padding-top: 1%;
+    padding-bottom: 1%
+}
+
+.stepper-selected {
+    font-size: 0.75em;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #152C5B
+}
+
+.stepper-unselected {
+    font-size: 0.75em;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #BBC2CE
+}
+
+.stepper-cover {
+    background-color: white;
+    padding: 10px
+}
+>>>>>>> master
