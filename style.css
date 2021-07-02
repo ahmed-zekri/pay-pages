@@ -103,6 +103,7 @@
 .margin-top {
     margin-top: 15px
 }
+
 .margin-top-checkbox {
     margin-top: 8px
 }
@@ -523,6 +524,7 @@
 }
 
 .stepper-margin {
+
     padding-top: 1%;
     padding-bottom: 1%
 }
@@ -543,5 +545,6 @@
 
 .stepper-cover {
     background-color: white;
-    padding: 10px
+    padding: 18px;
+    height: 55px;
 }
