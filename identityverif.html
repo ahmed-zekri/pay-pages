@@ -58,15 +58,17 @@
       <div class="row mb-2">
         <div class="col">
           <div class="form-outline">
-            <input  type="text" id="" class="form-control height-input style-name-input" placeholder="Latin name"/>
+            <label class="label-style">Name</label>
+            <input  type="text" id="" class="form-control height-input" placeholder="Enter name"/>
 
           </div>
         </div>
         <div class="col">
           <div class="has-feedback ">
-            <span class="form-control-feedback">
+            <label>Birthdate</label>
+            <!-- <span class="form-control-feedback">
                 <i  class="fa fa-calendar style-calendar-icon"></i>
-              </span>
+              </span> -->
             <input  placeholder="birth date"  class="form-control widget  width-input-date" type="date" name="date"/>
             
           </div>
@@ -75,8 +77,9 @@
       <div class="row mb-2">
         <div class="col">
           <div class="dropdown ">
+            <label class="label-style">Nationality</label>
             <button class="widget  btn dropdown_light dropdown-toggle-float-right  dropdown-border-color" type="button" id="dropdownMenuButtonGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <div class="div-text">Nationality </div> 
+         <div class="div-text"> Choose nationality </div> 
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#">French</a>
@@ -87,6 +90,7 @@
         </div>
         <div class="col">
           <div class="form-outline">
+            <label>Address</label>
             <input type="text" id="" class="form-control height-input" placeholder="Address"/>
 
           </div>
@@ -95,8 +99,9 @@
       <div class="row mb-2">
         <div class="col">
           <div class="dropdown ">
+            <label class="label-style">Document type</label>
             <button class="widget  btn dropdown_light dropdown-toggle-float-right dropdown-border-color" type="button" id="dropdownMenuButtonGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div  class="div-text">Document type </div> 
+              <div  class="div-text">Choose document type </div> 
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#"></a>
@@ -107,7 +112,8 @@
         </div>
         <div class="col">
           <div class="form-outline">
-            <input type="text" id="" class="form-control height-input" placeholder="Document number"/>
+            <label class="label-style"> Document number</label>
+            <input type="text" id="" class="form-control height-input" placeholder="Enter document number"/>
 
           </div>
         </div>
@@ -117,6 +123,7 @@
         <div class="col-md-6">
 
           <div class="dropdown ">
+            <label class="label-style">Document country</label>
             <button class="widget  btn dropdown_light dropdown-toggle-float-right dropdown-border-color" type="button" id="dropdownMenuButtonGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div  class="div-text" >Document country </div> 
             </button>
@@ -132,18 +139,20 @@
       <div class="row mb-2">
         <div class="col">
           <div class="has-feedback ">
-            <input  class="form-control widget  width-input-date" type="text" name="daterange"/>
-            <span class="form-control-feedback">
+            <label class="label-style" >Issuing date</label>
+            <input  class="form-control widget  width-input-date" type="date" name="daterange"/>
+            <!-- <span class="form-control-feedback">
               <i class="fa fa-calendar style-calendar-icon2"></i>
-            </span>
+            </span> -->
           </div>
         </div>
         <div class="col">
           <div class="has-feedback ">
-            <input  class="form-control widget  width-input-date" type="text" name="daterange"/>
-            <span class="form-control-feedback">
+            <label class="label-style">Expiration date</label>
+            <input  class="form-control widget  width-input-date" type="date" name="daterange"/>
+            <!-- <span class="form-control-feedback">
               <i  class="fa fa-calendar style-calendar-icon2"></i>
-            </span>
+            </span> -->
           </div>
         </div>
       </div>
