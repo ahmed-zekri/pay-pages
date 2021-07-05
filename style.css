@@ -336,13 +336,13 @@
 .image2 {
     position: absolute;
     top: 143px;
-    left: 5px;
+    left: -21px;
 }
 
 .image3 {
     position: absolute;
     top: 143px;
-    left: 317px;
+    left: 295px;
 }
 
 .step {
@@ -804,4 +804,8 @@
     color:#152C5B;
     font-family: Roboto, sans-serif;
 
+}
+.position-div-title{
+    margin-left: -17px;
+    margin-bottom: 15px;
 }
