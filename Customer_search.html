@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <title>Customer search</title>
+
+
+</head>
+<body class="host">
+<div class="container-fluid container_host">
+    <div class="row">
+        <div class="col-md-3 title mb-3">Search for a customer</div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3 filters">
+            <div class="dropdown ">
+                <button class="widget shadow btn dropdown_light dropdown-toggle" type="button" id="dropdownMenuMode"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="gray pr-5 translate-x-MSISDN">MSISDN</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 filters translate-x-MSISDN ">
+
+            <div class="input-group ">
+                <i class="fa fa-lg fa-search mt-4  translate-x-search gray"></i>
+                <input type="text" class="shadow-sm widget pl-5 form-control" placeholder="Search with MSISDN">
+            </div>
+
+        </div>
+        <div class="col-md-2 filters translate-x-MSISDN">
+            <div class="row button-row">
+                <div class="col-md button-container">
+                    <input type="button" class="btn  btn-responsive" value="Search">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row row-table">
+        <div class="col-md title">15 Results</div>
+    </div>
+    <div class="row row-table table_margin">
+
+        <div class="col-md-10">
+
+            <table id="example" class="shadow table table-striped  " style="width:100%">
+                <thead>
+                <tr>
+                    <th class="th_style">Name</th>
+                    <th class="th_style">Latin name</th>
+                    <th class="th_style">Date</th>
+                    <th class="th_style">Residence address</th>
+                    <th class="th_style">Actions</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="filters td_style">Ahmed</td>
+                    <td class="filters td_style">zekri</td>
+                    <td class="filters td_style">20/02/2020</td>
+                    <td class="filters td_style">El kram tunis</td>
+                    <td class="filters td_style gray"><u>More info</u></td>
+
+                </tr>
+                <tr>
+                    <td class="filters td_style">Ahmed</td>
+                    <td class="filters td_style">zekri</td>
+                    <td class="filters td_style">20/02/2020</td>
+                    <td class="filters td_style">El kram tunis</td>
+                    <td class="filters td_style gray"><u>More info</u></td>
+
+                </tr>
+                <tr>
+                    <td class="filters td_style">Ahmed</td>
+                    <td class="filters td_style">zekri</td>
+                    <td class="filters td_style">20/02/2020</td>
+                    <td class="filters td_style">El kram tunis</td>
+                    <td class="filters td_style gray"><u>More info</u></td>
+
+                </tr>
+                <tr>
+                    <td class="filters td_style">Ahmed</td>
+                    <td class="filters td_style">zekri</td>
+                    <td class="filters td_style">20/02/2020</td>
+                    <td class="filters td_style">El kram tunis</td>
+                    <td class="filters td_style gray"><u>More info</u></td>
+
+                </tr>
+                <tr>
+                    <td class="filters td_style">Ahmed</td>
+                    <td class="filters td_style">zekri</td>
+                    <td class="filters td_style">20/02/2020</td>
+                    <td class="filters td_style">El kram tunis</td>
+                    <td class="filters td_style gray"><u>More info</u></td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+        }, function (start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+</script>
+</body>
+</html>
