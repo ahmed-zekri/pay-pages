@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal
+</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><span
+                        class="modal-title-light ml-4">Confirm application</span>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-body-fix">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 shadow-sm p-2 m-1 white-background">
+                        <div class="row">
+                            <div class="col-md-6 title-modal-light">Identification</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">Latin name</div>
+                            <div class="col-md-6 gray-modal">Phone number</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">Nick mayer</div>
+                            <div class="col-md-6 modal-sub-title">+21652554123</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">OTP</div>
+                            <div class="col-md-6 gray-modal">Birth date</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">165164</div>
+                            <div class="col-md-6 modal-sub-title">10/03/1993</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">Nationality</div>
+                            <div class="col-md-6 gray-modal">Address</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">Tunisian</div>
+                            <div class="col-md-6 modal-sub-title">Kram tunis</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">Document type</div>
+                            <div class="col-md-6 gray-modal">Document number</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">Passport</div>
+                            <div class="col-md-6 modal-sub-title">52554123</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">Document country</div>
+                            <div class="col-md-6 gray-modal">Issuing date</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">Algeria</div>
+                            <div class="col-md-6 modal-sub-title">10/02/2021</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">Expiration date</div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">20/02/2025</div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-5 shadow-sm p-2 m-1 white-background">
+                        <div class="row">
+                            <div class="col-md-6 title-modal-light">Information</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">Latin name</div>
+                            <div class="col-md-6 gray-modal">Phone number</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">Nick mayer</div>
+                            <div class="col-md-6 modal-sub-title">+21652554123</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">OTP</div>
+                            <div class="col-md-6 gray-modal">Birth date</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">165164</div>
+                            <div class="col-md-6 modal-sub-title">10/03/1993</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">Nationality</div>
+                            <div class="col-md-6 gray-modal">Address</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">Tunisian</div>
+                            <div class="col-md-6 modal-sub-title">Kram tunis</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 gray-modal">Document type</div>
+                            <div class="col-md-6 gray-modal">Document number</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title">Passport</div>
+                            <div class="col-md-6 modal-sub-title">52554123</div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6 modal-sub-title mt-4"><img src="img/pexels-photo-614810.jpeg"
+                                                                            class="image1" width="80" height="80"></div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>

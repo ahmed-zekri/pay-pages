@@ -739,59 +739,67 @@
     position: relative;
     font-weight: 500;
 }
-.div-text{
-    color:#8C99B1;
+
+.div-text {
+    color: #8C99B1;
     text-align: left;
-    size:16px
-  }
-  .style-text{
+    size: 16px
+}
+
+.style-text {
     text-align: left;
     font-size: 14px;
     color: #8C99B1;
     opacity: 1;
     font-family: Roboto, sans-serif;
 }
-.address-style{
-    color:#152C5B;
+
+.address-style {
+    color: #152C5B;
     font-family: Roboto, sans-serif;
 }
-.passport-style{
-    color:#152C5B; 
+
+.passport-style {
+    color: #152C5B;
     font-size: 16px;
-     font-family: Roboto, sans-serif;
-     font-weight: 700;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
 }
 
 
-.date-style{
-    color:#152C5B;
+.date-style {
+    color: #152C5B;
     margin-top: 3px;
-     font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
 
 }
-.step-position1{
+
+.step-position1 {
     position: absolute;
     top: 475px;
     left: 283px;
 }
-.step-position2{
+
+.step-position2 {
     position: absolute;
     top: 475px;
     left: 308px;
 }
-.step-position3{
+
+.step-position3 {
     position: absolute;
     top: 475px;
     left: 332px;
 }
 
-.information-div{
+.information-div {
     background-color: white;
-    margin-left:55px ;
+    margin-left: 55px;
     margin-top: 60px;
 }
+
 .dropdown-toggle-float-right::after {
-        
+
     margin-left: .255em;
     vertical-align: .255em;
     content: "";
@@ -802,13 +810,53 @@
     float: right;
     transform: translate(0px, -9px);
 }
-.label-style{
+
+.label-style {
     font-size: 16px;
-    color:#152C5B;
+    color: #152C5B;
     font-family: Roboto, sans-serif;
 
 }
-.position-div-title{
+
+.position-div-title {
     margin-left: -17px;
     margin-bottom: 15px;
+}
+
+.title-modal-light {
+    font-family: Roboto, normal, sans-serif;
+    font-size: 17px;
+    color: #152C5B;
+
+    margin-top: 10px;
+}
+
+.modal-sub-title {
+    font-family: Roboto, normal, sans-serif;
+    font-size: 17px;
+    color: #152C5B;
+    font-weight: bold;
+
+}
+
+.gray-modal {
+    color: lightgray;
+    margin-top: 10px;
+}
+
+.modal-title-light {
+    font-family: Roboto, normal, sans-serif;
+    font-size: 15px;
+    color: #152C5B;
+
+
+}
+
+.white-background {
+    background-color: white;
+}
+
+.modal-body-fix {
+    background-color: rgb(254, 254, 254);
+    margin: 0
 }
