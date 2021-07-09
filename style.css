@@ -260,6 +260,7 @@
 
 
 .gray {
+    font-family: Roboto, normal, sans-serif;
     color: lightgray;
 }
 
@@ -577,6 +578,18 @@
 
 }
 
+.am-name {
+    /*border-style: solid;*/
+
+    font-family: Roboto, medium, sans-serif;
+    font-size: 16px;
+    color: #152C5B;
+
+    font-weight: bold;
+
+
+}
+
 .host {
     background: #f8f8f8 0 0 no-repeat padding-box;
     opacity: 1;
@@ -871,4 +884,25 @@
 
 .translate-x-MSISDN {
     transform: translateX(-10%);
+}
+
+.modal-title-light-gray {
+    color: lightgray;
+    font-family: Roboto, normal, sans-serif;
+
+}
+
+.title-modal-light-bold {
+    font-family: Roboto, normal, sans-serif;
+    font-size: 15px;
+    color: #152C5B;
+
+    font-weight: bolder;
+}
+
+.gray-lighty {;
+}
+
+.gray-modal-lighter {
+    color: #8C99B1;
 }
